@@ -16,6 +16,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String word =scanner.nextLine();
 
-        System.out.println("Перевод слова " + word + " - " + map.get(word));
+        String wordRu = map.get(word);
+        if(map.containsKey(word)) {
+            System.out.println("Перевод слова " + word + " - " + wordRu);
+        }
+        else System.out.println("Такого слова в словаре нет");
+
+
     }
 }
