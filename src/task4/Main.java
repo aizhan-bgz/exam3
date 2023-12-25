@@ -1,17 +1,21 @@
 package task4;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         HashMap<String, String> map = new HashMap<>();
 
-        map.put("Mother", "мама");
-        map.put("School", "школа");
+        map.put("mother", "мама");
+        map.put("school", "школа");
+        map.put("job", "работа");
+        map.put("family", "семья");
 
-        System.out.println(map.get("Mother"));
-        System.out.println(map.get("School"));
+        Scanner scanner = new Scanner(System.in);
+        String word =scanner.nextLine();
 
+        System.out.println("Перевод слова " + word + " - " + map.get(word));
     }
 }
